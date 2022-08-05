@@ -107,7 +107,7 @@ dofullbright()
 Light.LightingChanged:Connect(dofullbright)
 end)
 
-Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.F, function()
+Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.KeypadSeven, function()
 	Library:ToggleUI()
 end)
 
