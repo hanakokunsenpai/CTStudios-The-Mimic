@@ -114,3 +114,4 @@ end)
 
 local Tab = Window:NewTab("Credits")
 local Section = Tab:NewSection("Made By shxdxwstxr#6155")
+local Section = Tab:NewSection("CREDITS TO ALL THE RIGHTFUL OWNERS")
