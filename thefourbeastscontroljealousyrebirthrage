@@ -42,6 +42,10 @@ Section:NewButton("Revamp I", "The Mimic", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/TheMimicBook1RevampScript/main/.Lua"))()
 end)
 
+Section:NewButton(Jigoku", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/JigokuScriptGoodPOOMHUB-/main/.pyXluaXjavaXC%2B%2B"))()
+end)
+
 local Section = Tab:NewSection("XVAS")
 
 Section:NewButton("Book I", "The Mimic", function()
