@@ -42,7 +42,7 @@ Section:NewButton("Revamp I", "The Mimic", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/TheMimicBook1RevampScript/main/.Lua"))()
 end)
 
-Section:NewButton(Jigoku", "The Mimic", function()
+Section:NewButton("Jigoku", "The Mimic", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/JigokuScriptGoodPOOMHUB-/main/.pyXluaXjavaXC%2B%2B"))()
 end)
 
@@ -81,12 +81,6 @@ end
 
 end)
 
-local Section = Tab:NewSection("Noob Hub")
-
-Section:NewButton("The Mimic", "The Mimic", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/koio08199za/THEMIMIC/main/NOOBHUB.Lua"))()
-end)
-
 local Tab = Window:NewTab("Yokai")
 local Section = Tab:NewSection("Coming Soon...")
 
@@ -114,7 +108,6 @@ end)
 Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.F, function()
 	Library:ToggleUI()
 end)
-
 
 local Tab = Window:NewTab("Credits")
 local Section = Tab:NewSection("Made By shxdxwstxr#6155")
