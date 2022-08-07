@@ -87,6 +87,16 @@ Section:NewButton("Sexy UI", "The Mimic", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/03koios/TheMimicVeryop/main/TheMimicSexyUi'))()
 end)
 
+Section:NewButton("The Mimic Testing", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/03koios/TheMimic/main/TheMimic'))()
+end)
+
+local Section = Tab:NewSection("Dragon Hub")
+
+Section:NewButton("The Mimic Testing", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DRAGONXHUB/Themimic/main/THEMIMIC.lua'))()
+end)
+
 local Tab = Window:NewTab("Yokai")
 local Section = Tab:NewSection("Coming Soon...")
 
