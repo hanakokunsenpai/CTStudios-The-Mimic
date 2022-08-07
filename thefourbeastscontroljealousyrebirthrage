@@ -81,6 +81,12 @@ end
 
 end)
 
+local Section = Tab:NewSection("Noob Hub")
+
+Section:NewButton("Sexy UI", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/03koios/TheMimicVeryop/main/TheMimicSexyUi'))()
+end)
+
 local Tab = Window:NewTab("Yokai")
 local Section = Tab:NewSection("Coming Soon...")
 
