@@ -2,7 +2,7 @@ local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/daw
 
 local win = DiscordLib:Window("Hanako")
 
-local serv = win:Server("KTollT", "")
+local serv = win:Server("KTollT", "rbxassetid://10566586189")
 
 local btns = serv:Channel("KTollT")
 
@@ -37,7 +37,7 @@ btns:Button("Lantern", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Lantern/main/README.md'))()
 end)
 
-local serv = win:Server("Poom Hub", "")
+local serv = win:Server("Poom Hub", "rbxassetid://10566597198")
 
 
 local btns = serv:Channel("April Fools")
