@@ -25,6 +25,10 @@ Section:NewButton("Lantern", "The Mimic", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Lantern/main/README.md'))()
 end)
 
+Section:NewButton("Rejoin", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Rejoin/main/README.md'))()
+end)
+
 local Section = Tab:NewSection("POOM HUB")
 
 Section:NewButton("POOM HUB (old version)", "The Mimic", function()
