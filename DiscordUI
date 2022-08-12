@@ -1,0 +1,145 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("Hanako")
+
+local serv = win:Server("KTollT", "")
+
+local btns = serv:Channel("KTollT")
+
+btns:Button("KTollT", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/KTollT/main/README.md'))()
+end)
+
+local btns = serv:Channel("KTollT Arceus X")
+
+btns:Button("KTollT Arceus X", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/NewGUI/main/README.md'))()
+end)
+
+local btns = serv:Channel("Limited")
+
+btns:Button("Limited", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Limited/main/README.md'))()
+end)
+
+
+local btns = serv:Channel("LimitedTwo")
+
+btns:Button("LimitedTwo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/LimitedTwo/main/README.md'))()
+end)
+
+
+
+local btns = serv:Channel("Lantern")
+
+btns:Button("Lantern", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Lantern/main/README.md'))()
+end)
+
+local serv = win:Server("Poom Hub", "")
+
+
+local btns = serv:Channel("April Fools")
+
+btns:Button("April Fools", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptAutoFarmMimicPoomHubLimited/main/.Lua"))() 
+end)
+
+
+local btns = serv:Channel("The Mimic Book II")
+
+btns:Button("The Mimic Book II", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptTheMimicPoomHubBookIIFirst/main/.Lua"))()
+end)
+
+local btns = serv:Channel("Halloween Trials")
+
+btns:Button("Halloween Trials", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/POOMHUBHalloweenScript/main/.Lua"))()
+end)
+
+
+local btns = serv:Channel("Revamp I")
+
+btns:Button("Revamp I", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/TheMimicBook1RevampScript/main/.Lua"))()
+end)
+
+local btns = serv:Channel("Jigoku")
+
+btns:Button("Jigoku", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/JigokuScriptGoodPOOMHUB-/main/.pyXluaXjavaXC%2B%2B"))()
+end)
+
+local btns = serv:Channel("Fly")
+
+btns:Button("Fly", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/CTStudios-The-Mimic/main/flypoomhub"))()
+end)
+
+local serv = win:Server("XVAS", "")
+
+local btns = serv:Channel("Book I")
+
+btns:Button("Book I", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XITHHUB/SCRIPT/main/README.md"))()
+end)
+
+local btns = serv:Channel("Book II")
+
+btns:Button("Book II", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XITHHUB/TheMimic/main/README.md"))()
+end)
+
+local btns = serv:Channel("Jigoku")
+
+btns:Button("Jigoku", function()
+function Tp(X, Y, Z)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(X, Y, Z)
+end
+if game.PlaceId == 7618863566 then
+    Tp(604.8139038085938, 11.90846061706543, 1079.7760009765625)
+    wait(7)
+    Tp(637.9722900390625, 11.74887752532959, 910.3511962890625)
+    for i, v in pairs(game:GetService("Workspace"):GetDescendants()) do
+        if v.ClassName == "ProximityPrompt" and v.Parent.Name == "Orb" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Parent.CFrame * CFrame.new(0, -5, 0)
+            wait(.2)
+            fireproximityprompt(v, 1)
+        end
+    end
+else
+    for i, v in pairs(Game.Players:GetChildren()) do
+        if v.Name ~= "owner.Name" then
+            Game:GetService("TeleportService"):Teleport(7618863566, v.Character)
+        end
+    end
+end
+
+end)
+
+local serv = win:Server("Others", "")
+
+local btns = serv:Channel("Infinite Yield")
+
+btns:Button("Infinite Yield", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+local btns = serv:Channel("Fullbright")
+
+btns:Button("Fullbright", function()
+    local Light = game:GetService("Lighting")
+
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+
+dofullbright()
+
+Light.LightingChanged:Connect(dofullbright)
+end)
+
