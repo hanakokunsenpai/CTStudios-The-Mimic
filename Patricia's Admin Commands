@@ -1,5 +1,5 @@
 if IY_LOADED and not _G.IY_DEBUG == true then
-	-- error("Infinite Yield is already running!",0)
+	-- error("Patricia's Admin Commands is already running!",0)
 	return
 end
 
@@ -9,7 +9,7 @@ COREGUI = game:GetService("CoreGui")
 if not game:IsLoaded() then
 	local notLoaded = Instance.new("Message")
 	notLoaded.Parent = COREGUI
-	notLoaded.Text = 'Infinite Yield is waiting for the game to load'
+	notLoaded.Text = 'Patricia's Admin Commands is waiting for the game to load'
 	game.Loaded:Wait()
 	notLoaded:Destroy()
 end
@@ -11922,6 +11922,7 @@ addcmd('unautokeypress',{'noautokeypress','unkeypress','nokeypress'},function(ar
 	autoKeyPressing = false
 	if cancelAutoKeyPress then cancelAutoKeyPress:Disconnect() end
 end)
+
 
 addcmd('addplugin',{'plugin'},function(args, speaker)
 	addPlugin(getstring(1))
