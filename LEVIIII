@@ -1,0 +1,118 @@
+wait(0.7)
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("TheMimicEnthusiastYT#4866", "Ocean")
+
+local Tab = Window:NewTab("The Mimic")
+local Section = Tab:NewSection("KTollT")
+
+Section:NewButton("KTollT", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/KTollT/main/README.md'))()
+end)
+
+Section:NewButton("KTollT Arceus X", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/NewGUI/main/README.md'))()
+end)
+
+Section:NewButton("Limited", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Limited/main/README.md'))()
+end)
+
+Section:NewButton("Limited Two", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/LimitedTwo/main/README.md'))()
+end)
+
+Section:NewButton("Lantern", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Lantern/main/README.md'))()
+end)
+
+Section:NewButton("Rejoin", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Rejoin/main/README.md'))()
+end)
+
+local Section = Tab:NewSection("POOM HUB")
+
+Section:NewButton("Fly", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.8"))()
+end)
+
+Section:NewButton("April Fools", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptAutoFarmMimicPoomHubLimited/main/.Lua"))()
+end)
+
+Section:NewButton("The Mimic Book II", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptTheMimicPoomHubBookIIFirst/main/.Lua"))()
+end)
+
+Section:NewButton("Halloween Trials", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/POOMHUBHalloweenScript/main/.Lua"))()
+end)
+
+Section:NewButton("Revamp I", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/TheMimicBook1RevampScript/main/.Lua"))()
+end)
+
+Section:NewButton("Jigoku", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/JigokuScriptGoodPOOMHUB-/main/.pyXluaXjavaXC%2B%2B"))()
+end)
+
+local Section = Tab:NewSection("XVAS")
+
+Section:NewButton("Book I", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XITHHUB/SCRIPT/main/README.md"))()
+end)
+
+Section:NewButton("Book II", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XITHHUB/TheMimic/main/README.md"))()
+end)
+
+Section:NewButton("Jigoku", "The Mimic", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/xvas/main/jigoku"))()
+end)
+
+local Section = Tab:NewSection("Noob Hub")
+
+Section:NewButton("Sexy UI", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/03koios/TheMimicVeryop/main/TheMimicSexyUi'))()
+end)
+
+Section:NewButton("The Mimic Testing", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/03koios/TheMimic/main/TheMimic'))()
+end)
+
+local Section = Tab:NewSection("Dragon Hub")
+
+Section:NewButton("The Mimic Testing", "The Mimic", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DRAGONXHUB/Themimic/main/THEMIMIC.lua'))()
+end)
+
+local Tab = Window:NewTab("Yokai")
+local Section = Tab:NewSection("Coming Soon...")
+
+local Tab = Window:NewTab("Others")
+local Section = Tab:NewSection("Others")
+
+Section:NewButton("Infinite Yield", "FE Admin Commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewButton("Fullbright", "Makes The Map Brighter", function()
+    local Light = game:GetService("Lighting")
+
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+
+dofullbright()
+
+Light.LightingChanged:Connect(dofullbright)
+end)
+
+Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.KeypadSeven, function()
+	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Made By shxdxwstxr#6155")
+local Section = Tab:NewSection("CREDITS TO ALL THE RIGHTFUL OWNERS")
