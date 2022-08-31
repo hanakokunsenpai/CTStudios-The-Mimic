@@ -2,7 +2,7 @@ wait(0.7)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("トイレの花子さん", "BloodTheme")
 
-local Tab = Window:NewTab("The Mimic")
+local Tab = Window:NewTab("The Mimic Script Hubs")
 local Section = Tab:NewSection("KTollT")
 
 Section:NewButton("KTollT", "The Mimic", function()
@@ -113,6 +113,4 @@ Section:NewKeybind("Toggle UI", "KeybindInfo", Enum.KeyCode.KeypadSeven, functio
 	Library:ToggleUI()
 end)
 
-local Tab = Window:NewTab("Credits")
-local Section = Tab:NewSection("Made By shxdxwstxr#6155")
-local Section = Tab:NewSection("CREDITS TO ALL THE RIGHTFUL OWNERS")
+-- made by amane#3136 (credits to all rightful owners)
