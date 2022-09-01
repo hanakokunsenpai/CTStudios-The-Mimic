@@ -1,155 +1,164 @@
-local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
 
-local win = DiscordLib:Window("Hanako")
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
 
-local serv = win:Server("KTollT", "rbxassetid://10566586189")
 
-local btns = serv:Channel("KTollT")
+ 
 
-btns:Button("KTollT", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/KTollT/main/README.md'))()
+
+local DiscordLib = loadstring(game:HttpGetjVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('oBxPPVtRkFmTChufYepueJlBPPkoxJVsblUrSeinTqrKdTyxpeQkgPkaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2Rhd2lkLXNjcmlwdHMvVUktTGlicy9tYWluL2Rpc2NvcmQlMjBsaWIudHh0'))()
+
+local win = DiscordLib:Window(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('hmiHNnaKVrrstDBTkmBqJBfxZtmfNdDCKVLInRQXGmDQflUqLqxSgoGSGFuYWtv'))
+
+local serv = win:Server(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('qvSHZTivHIQAwwIboTVmYHuBmShSoREkcbRZDXScfAsbWqihMNNARNQS1RvbGxU'), jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('CpwFIVZRKvKLabtkpqDopCTOCCbplYOGocSGczXTWdVBwDbNVuvWYqhcmJ4YXNzZXRpZDovLzEwNTY2NTg2MTg5'))
+
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('LEJvbUZHppjWWWQUTVVUMwgrXkLgkVdYSQDSZqxEGgVchwdObIQeotxS1RvbGxU'))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('YgmrfdqsvgTgmRBIFCXZHcTckCkrUtRZWWXHXoGhVuGJcNHkGboRAhcS1RvbGxU'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('psxwIyBrKTxcrAqzomXJBUGpAoBJcTUnfzyXpsMEGkMzPJyAvHigoxEaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0tUb2xsVC9LVG9sbFQvbWFpbi9SRUFETUUubWQ=')))()
 end)
 
-local btns = serv:Channel("KTollT Arceus X")
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('xSquhaJjvkjpePvfxMJbGYIOpjfuGsygkunIDSoToPhjOuULkectFnLS1RvbGxUIEFyY2V1cyBY'))
 
-btns:Button("KTollT Arceus X", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/NewGUI/main/README.md'))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('XOtTpsnwQptIinkgzFdNCZVfbylcGWDstulPNTbShmXZOyvfFWDmQGUS1RvbGxUIEFyY2V1cyBY'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('FcziWtMwchEnSJCcPxpMoNxdWCVNSWpNmkzShIYkANmtceuDNttpuOzaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0tUb2xsVC9OZXdHVUkvbWFpbi9SRUFETUUubWQ=')))()
 end)
 
-local btns = serv:Channel("Limited")
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('isFIGUWlHMJcegjbJMmnwYDkiaHALiTdJxvTyYrNXytCnUrNoCSBxdnTGltaXRlZA=='))
 
-btns:Button("Limited", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Limited/main/README.md'))()
-end)
-
-
-local btns = serv:Channel("LimitedTwo")
-
-btns:Button("LimitedTwo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/LimitedTwo/main/README.md'))()
-end)
-
-
-
-local btns = serv:Channel("Lantern")
-
-btns:Button("Lantern", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/KTollT/Lantern/main/README.md'))()
-end)
-
-local serv = win:Server("Poom Hub", "rbxassetid://10566597198")
-
-
-local btns = serv:Channel("April Fools")
-
-btns:Button("April Fools", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptAutoFarmMimicPoomHubLimited/main/.Lua"))() 
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('vumtgiIhQngjAEZbkkcrIDWPLWucRQufoSLAihlHCMcSvwKRAOkXgosTGltaXRlZA=='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('dyFLSJoJmwJgPIlWyYDyKBnrezIdZITwHtZqWKuPkuxUrcsvZxgaboiaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0tUb2xsVC9MaW1pdGVkL21haW4vUkVBRE1FLm1k')))()
 end)
 
 
-local btns = serv:Channel("The Mimic Book II")
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('fQzOalbYPkjhDXPksvWAgJUxWTUsCBZWVlVpqOLIJLqILvpMeXasrFnTGltaXRlZFR3bw=='))
 
-btns:Button("The Mimic Book II", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/ScriptTheMimicPoomHubBookIIFirst/main/.Lua"))()
-end)
-
-local btns = serv:Channel("Halloween Trials")
-
-btns:Button("Halloween Trials", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/POOMHUBHalloweenScript/main/.Lua"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('lJpJBRetKwfNKYKuCQKWZMOiyzHoAEZwxioovatYncXJSHsymNFbIUBTGltaXRlZFR3bw=='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('FbXWDZpSgdDLcwDytOlNNGjSVbbMrQaVzhVRqXWlvpBApptKOQdtDqsaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0tUb2xsVC9MaW1pdGVkVHdvL21haW4vUkVBRE1FLm1k')))()
 end)
 
 
-local btns = serv:Channel("Revamp I")
 
-btns:Button("Revamp I", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/TheMimicBook1RevampScript/main/.Lua"))()
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('oRJuLyoEszJfRZLfDwfVNMkdXlWMLPkMdcCaIWdRaOdENqcrnRVxBfmTGFudGVybg=='))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('FGCqXqSWSBXaiLfwTCmQYzlKbXDQeaAbbJrhWylXNqAcamRCzHErPMMTGFudGVybg=='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('zGcJaQlMzbRvNPADfbKUSGgGVIyvMxVWxHxGPALVUWHyhvQDOYzXFYLaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0tUb2xsVC9MYW50ZXJuL21haW4vUkVBRE1FLm1k')))()
 end)
 
-local btns = serv:Channel("Jigoku")
+local serv = win:Server(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('lsXUDcfDbFXZutwyVIreIvyvaFhemnYWTChPLObliAQMDfRTBdUWpaGUG9vbSBIdWI='), jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('qzoaTCrEdbLIftrOeEPuISUrkPRZxzrcmNRwcDPanQiYWNwqyByjItVcmJ4YXNzZXRpZDovLzEwNTY2NTk3MTk4'))
 
-btns:Button("Jigoku", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/poisklmpoikslms901i234/JigokuScriptGoodPOOMHUB-/main/.pyXluaXjavaXC%2B%2B"))()
+
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('nCAolWFXHOCLeBmdySzhATdunZHIUjMZzRbHIxdltbpLcybiDwNpjuZQXByaWwgRm9vbHM='))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('JGijqcXEWLEpgafjGPHvpGRNYxGqPdDPjsPOlAaQAIAnPhoOBmKLOBCQXByaWwgRm9vbHM='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('odLuBYOkYOvSoLNWKaKPZDNHfRkuQmNRIrRdstAVbUrcQwEADBIwrylaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BvaXNrbG1wb2lrc2xtczkwMWkyMzQvU2NyaXB0QXV0b0Zhcm1NaW1pY1Bvb21IdWJMaW1pdGVkL21haW4vLkx1YQ==')))() 
 end)
 
-local btns = serv:Channel("Fly")
 
-btns:Button("2.0", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.0"))()
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('PxBQmEODIZGqpHtOzSZjWTcEusWnaYfrwAMoimIUgZzKGFDSvVXzPcoVGhlIE1pbWljIEJvb2sgSUk='))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('LLkEmDDADwUElaOMEqZsXRodlSRIiMCVdUQhjvtuUovzhWYjXTZsWUpVGhlIE1pbWljIEJvb2sgSUk='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('EJxDXqCfjPcBnvPZbCzpXIxHdGybeqLbTZsAZdwuJHeHPavHhDjelIqaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BvaXNrbG1wb2lrc2xtczkwMWkyMzQvU2NyaXB0VGhlTWltaWNQb29tSHViQm9va0lJRmlyc3QvbWFpbi8uTHVh')))()
 end)
 
-btns:Button("2.1", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.1"))()
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('uioLMgFsCyYFOAyurtKxSFNEshQhactAasFuvhKryqluyzABopmLeHKSGFsbG93ZWVuIFRyaWFscw=='))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('pKfqoiNJKyWrPbHlxYZxLspWUVkYgujOuZvXutsBpyCrkMsQuyYztSrSGFsbG93ZWVuIFRyaWFscw=='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('eFXCneRlCywoECFPAOGaVohadVJgkvLlOfNyftXRfIyCRJkzTpkboSraHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BvaXNrbG1wb2lrc2xtczkwMWkyMzQvUE9PTUhVQkhhbGxvd2VlblNjcmlwdC9tYWluLy5MdWE=')))()
 end)
 
-btns:Button("2.2", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.2"))()
+
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('dGdTBciDQsvogvoEFchbULJeFwThLfCrxYKKyHUPUIGrzzvYRSayYGKUmV2YW1wIEk='))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('zeClwanLqFHQldRYaaKHOmUwGnKOrDQzNnKmBiQoERPbaCJNkfFldIVUmV2YW1wIEk='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('EAphAWGsmPCnHTnMOhjdftyEsGcekwlzwCGxtgQOLaQsjvBtdRGvXEaaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BvaXNrbG1wb2lrc2xtczkwMWkyMzQvVGhlTWltaWNCb29rMVJldmFtcFNjcmlwdC9tYWluLy5MdWE=')))()
 end)
 
-btns:Button("2.3", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.3"))()
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('EoLBhDWXApooSSMdvZUKosLLgwIWgITyYXOwoLDQBwtysGqtJkFyEamSmlnb2t1'))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('KMWazOsWernfnYBQlIRnNLNKaitpxcxLYuUucBneGneQZeexIpVPIbkSmlnb2t1'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('kZuXypzdAQhvZtkhpNDZdqnCmMUiqjaJBPoSbfuAILZhqNjGbtIGfHRaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3BvaXNrbG1wb2lrc2xtczkwMWkyMzQvSmlnb2t1U2NyaXB0R29vZFBPT01IVUItL21haW4vLnB5WGx1YVhqYXZhWEMlMkIlMkI=')))()
 end)
 
-btns:Button("2.4", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.4"))()
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('fMcBLzaFzVnrfdnlEmbNpzFYRYexHpoASkIKCdbCazyuOAfhILRBOLcRmx5'))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('uwQuXormtNIAsGUWOkTGChCYGiaTRhCDPYfrRUjIAyRUsiiZJEVoYunMi4w'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('XLbBHcnlKsKABiIlXeHoBLzgCqEEnpNWJxaxNlEYRSeUauDuwSTpmyuaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi4w')))()
 end)
 
-btns:Button("2.5", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.5"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('ARegUOqeEnWvqozIeyEQVlFyKbcGQrETVbLCMwCgyvRxRVREQTKbJqgMi4x'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('bzalUPWsFPnUkVDqzQGRKixwzsIWbqPIQsBMhTMfSkwjDiaPuBpEvVIaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi4x')))()
 end)
 
-btns:Button("2.6", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.6"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('iomfnZJiiXdUzzFpEyAvJoJEnrfODWhWuBfAwOKqMEyfntPoLdEJTYtMi4y'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('AOSDYsKtOhuICijbsxVYSGFfcWlceLvqkAhEuYtAjGPyxRrNoptaMGsaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi4y')))()
 end)
 
-btns:Button("2.7", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.7"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('jTItLxYRtTicgUrgnhfudsejnzALGQbUvwuOZPDhwnVtSEOZIyNCXgUMi4z'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('GfnqPYyYUdAgKgWlGDsPsoNPrEeLpWuMsEBQYMFGeKWAuULrzjZDTdhaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi4z')))()
 end)
 
-btns:Button("2.8", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.8"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('lFaJKFxQMVwtTPPBrUDBrKnVEoywGaZXJunVlYAhJwVZtQfKMdwFdpZMi40'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('MdUkUoeVrWgthCEJrKohhOzQycqIGUdfZNdyaImKIPKaOojidAjnjlDaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi40')))()
 end)
 
-btns:Button("2.9", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly2.9"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('DnbGmRsvZRwowVAWBcnHIgNtPshlaeYRNltyghIJjXDtqgalXQLCrhvMi41'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('oFzoimfROoSBFUeIKkLKqCWSoVsBdOEzWPcyjMZpXyuTgZaVXzJqGMraHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi41')))()
 end)
 
-btns:Button("3.0", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hanakokunsenpai/poomhubfly/main/fly3.0"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('ANUEGAHKEhusalBcrJgMtiOsUADLoUzLDnsoeLrsiYxFPvxyMptNXUbMi42'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('nSgNPmFDHLaLptEUOxBRtAGnHTlYNuhBfzWihDxfFMqrltcClydxZmcaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi42')))()
 end)
 
-local serv = win:Server("XVAS", "rbxassetid://10574084951")
-
-local btns = serv:Channel("Book I")
-
-btns:Button("Book I", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XITHHUB/SCRIPT/main/README.md"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('OwDNMLVzTvvnGCxRksvVdcryGcpmpqOXfPNNLhijvFNfxkASmctFKOrMi43'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('bNmmRQtwEjgZOEBXCwCLPYsOewZVhbujEdSGHufgIcMeQwbwltwVCDfaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi43')))()
 end)
 
-local btns = serv:Channel("Book II")
-
-btns:Button("Book II", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XITHHUB/TheMimic/main/README.md"))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('yaWzVXsPaBTrRRuivnugaZxUtqisWAYpRYGoCgXCGXtMUDDataneiOIMi44'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('uPvKzYiUuGUfwpXPMUJmtQPbtlgHiLUdVATGAmNLhChuWerZqkmRBJJaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi44')))()
 end)
 
-local btns = serv:Channel("Jigoku")
-
-btns:Button("Jigoku", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/hanakokunsenpai/xvas/main/jigoku'))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('LoCcedoMSyXEWjYmvbBswupwkyPgGvmHpmwyQsZGwqpmsYOiyXmMtANMi45'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('QEwtxacxYWXXTPRoXkyOPchIgIqOZxpYHgqRGzXVGkIvunBzLXSmqfhaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5Mi45')))()
 end)
 
-local serv = win:Server("Others", "rbxassetid://10574088080")
-
-local btns = serv:Channel("Infinite Yield")
-
-btns:Button("Infinite Yield", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('yeuzxNjeZwLOKMaCDsOfckwFjXznKvPhOnlUZHTpPZGKIIkoHGQhSTDMy4w'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('fwAVZYmqiIyRFnQwDiUXkgWKpzIsaFNhNdLtBOiJPPxkhyEOmVfQQicaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS9wb29taHViZmx5L21haW4vZmx5My4w')))()
 end)
 
-local btns = serv:Channel("Fullbright")
+local serv = win:Server(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('dllfLQLlRreawPuJTFiLvILJvHxCJiEewVOcDDtgIURQasCJKxQatDpWFZBUw=='), jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('BWPEHCgSjMbwFGiktYYVWLvnFbdHBkgSRHWQWGpcRBhDRnpLbLEOZyccmJ4YXNzZXRpZDovLzEwNTc0MDg0OTUx'))
 
-btns:Button("Fullbright", function()
-    local Light = game:GetService("Lighting")
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('YmNgwVxCuSxCjuZeeSjbTXRTLlPaEzlbZoHSOHJeLBtpWHeFrdlEWcTQm9vayBJ'))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('fFRUKSTNUWzUjkWOjtVrOcgQvBPfEAWEVhZuASZbHVgcNDRLEZnnwvmQm9vayBJ'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('aZPSamidVsSbTRJUBjazIVhACMjxLqdFKGpxJsZrKtnYRPsSMEsyWZcaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1hJVEhIVUIvU0NSSVBUL21haW4vUkVBRE1FLm1k')))()
+end)
+
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('PIlLKRhnJueqYDheSBHyQWEsrJWCZYGhZPAaRwXpMyJlUTtShxlqmFjQm9vayBJSQ=='))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('sfwxsKNFhUmhwRiYnnXxFIuxfJwydeUPmDQUOTlnONjszTchNDglwzvQm9vayBJSQ=='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('wCeLXjmsIDFlNBeQtLOCaJAhfTDzjrezNnwcbfMxSKhcjnGoWvPoBTVaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1hJVEhIVUIvVGhlTWltaWMvbWFpbi9SRUFETUUubWQ=')))()
+end)
+
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('XuxUHjPUbDrlqsRIuQLYcVdHvwwxzMsvPjFTgxHwRostjKHhXMXrKKKSmlnb2t1'))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('UtVlGAqGbGLSAuHjvOlkllmRzRavYrdhshnKiyORaEOUcAhVZwaEZsISmlnb2t1'), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('jxAVgAGdcrIYyFaYkENRWqLKJupoPLcjjcbPLhstQwTsJyZxlikteCyaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2hhbmFrb2t1bnNlbnBhaS94dmFzL21haW4vamlnb2t1')))()
+end)
+
+local serv = win:Server(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('rrqOZngpiqsNRGXOFAOTZYNzcNggsvyGWIxmxrdMaHLTIUVnjJLLnYGT3RoZXJz'), jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('FtzIPhdaMsufJoyaJgFQgApKMzFDoIsnmZghxmAjKwWxTCPXIrXWMmycmJ4YXNzZXRpZDovLzEwNTc0MDg4MDgw'))
+
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('vFEXneiBbUsFblaHbiKUPGUnDSTqpiGOkdCguWbarsLGyrTuudEFLgQSW5maW5pdGUgWWllbGQ='))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('ynnlWeiDtYnGRurWUKksIOLiNEAEiQFHqWXVobkrAppLzpTFrXojBRESW5maW5pdGUgWWllbGQ='), function()
+loadstring(game:HttpGet(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('qmGxvVJrScnxJRoPUQSltanZogeCPPGawuYHJHuqXfjUMZdnVaQGOeuaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0VkZ2VJWS9pbmZpbml0ZXlpZWxkL21hc3Rlci9zb3VyY2U=')))()
+end)
+
+local btns = serv:Channel(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('FHWcaVYuPttmMKAfNzwPgipHLQlPEkzjhDbJFkMRDeoQtOljuKvNIokRnVsbGJyaWdodA=='))
+
+btns:Button(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('UApKtdRHchJcijshHVJuegClkAwtlBCNHbvtxniythzgKKnRLgHWdfhRnVsbGJyaWdodA=='), function()
+    local Light = game:GetService(jVUeKhlwyVfFcbKIvsPaZFCbDRzmjmuTnOzCZCe('gsYqsnZlCFWzaGclOOwtvolDOuXBrqWanutBYspHJkOOAArwrLSJLfOTGlnaHRpbmc='))
 
 function dofullbright()
 Light.Ambient = Color3.new(1, 1, 1)
@@ -160,14 +169,4 @@ end
 dofullbright()
 
 Light.LightingChanged:Connect(dofullbright)
-end)
-
-local btns = serv:Channel("Green Horizon")
-
--- btns:Button("Green Horizon", function()
--- 
--- end)
-
-
-
--- credits to all rightful owners
+end)    
